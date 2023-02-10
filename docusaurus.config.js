@@ -1,60 +1,89 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+const lightCodeTheme = require("prism-react-renderer/themes/github");
+const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
-  favicon: 'img/favicon.ico',
+  title: "My Site",
+  tagline: "Dinosaurs are cool",
+  favicon: "img/favicon.ico",
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-test-site.com',
+  url: "https://your-docusaurus-test-site.com",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: "/",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: "facebook", // Usually your GitHub org/user name.
+  projectName: "docusaurus", // Usually your repo name.
 
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
+  onBrokenLinks: "throw",
+  onBrokenMarkdownLinks: "warn",
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: "en",
+    locales: ["en"],
   },
 
   presets: [
     [
-      'classic',
+      "classic",
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
+          sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: require.resolve("./src/css/custom.css"),
         },
       }),
+    ],
+  ],
+  plugins: [
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "docs2",
+        path: "docs2",
+        routeBasePath: "docs2",
+        sidebarPath: require.resolve("./sidebars.js"),
+      },
+    ],
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "docs3",
+        path: "docs3",
+        routeBasePath: "docs3",
+        sidebarPath: require.resolve("./sidebars.js"),
+      },
+    ],
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "docs4",
+        path: "docs4",
+        routeBasePath: "docs4",
+        sidebarPath: require.resolve("./sidebars.js"),
+      },
     ],
   ],
 
@@ -62,67 +91,108 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
+      image: "img/docusaurus-social-card.jpg",
+      algolia: {
+        apiKey: "xxxxx",
+        appId: "xxxxx",
+        indexName: "prod_index",
+      },
+      i18n: {
+        defaultLocale: "nl",
+        locales: ["nl", "fr"],
+        path: "i18n",
+        localeConfigs: {
+          nl: {
+            label: "Flemish",
+            direction: "ltr",
+            htmlLang: "nl-NL",
+            path: "nl",
+          },
+          fr: {
+            label: "Français",
+            direction: "rtl",
+            htmlLang: "fr-FR",
+            path: "fr",
+          },
+        },
+      },
       navbar: {
-        title: 'My Site',
+        title: "",
         logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          alt: "Logo",
+          src: "img/logo.svg",
         },
         items: [
           {
-            type: 'doc',
-            docId: 'intro',
-            position: 'left',
-            label: 'Tutorial',
+            type: "doc",
+            docId: "intro",
+            position: "left",
+            label: "Verstehen",
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
-            label: 'GitHub',
-            position: 'right',
+            to: "docs2/intro",
+            position: "left",
+            label: "Umsetzen",
+          },
+          {
+            to: "docs3/intro",
+            position: "left",
+            label: "Team",
+          },
+          {
+            to: "docs4/intro",
+            position: "left",
+            label: "Karriere",
+          },
+          {
+            type: "localeDropdown",
+            position: "right",
+          },
+          {
+            type: "search",
+            position: "right",
           },
         ],
       },
       footer: {
-        style: 'dark',
+        style: "dark",
         links: [
           {
-            title: 'Docs',
+            title: "Docs",
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/intro',
+                label: "Tutorial",
+                to: "/docs/intro",
               },
             ],
           },
           {
-            title: 'Community',
+            title: "Community",
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: "Stack Overflow",
+                href: "https://stackoverflow.com/questions/tagged/docusaurus",
               },
               {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                label: "Discord",
+                href: "https://discordapp.com/invite/docusaurus",
               },
               {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                label: "Twitter",
+                href: "https://twitter.com/docusaurus",
               },
             ],
           },
           {
-            title: 'More',
+            title: "More",
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
+                label: "Blog",
+                to: "/blog",
               },
               {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                label: "GitHub",
+                href: "https://github.com/facebook/docusaurus",
               },
             ],
           },

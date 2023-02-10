@@ -5,7 +5,7 @@ import { IotaCore, IotaToken, PickAWallet } from "./icons";
 
 export default function UsePart() {
   return (
-    <HomepageSection header="Use IOTA">
+    <HomepageSection header="Nachhaltiger Vermögensaufbau im 21. Jahrhundert">
       <div className="about__cards">
         <Link
           to="learn/about-iota/an-introduction-to-iota"
@@ -15,10 +15,10 @@ export default function UsePart() {
             <div className="about__icon">
               <IotaCore />
             </div>
-            <h3 className="about__header">What is IOTA?</h3>
+            <h3 className="about__header">Vermögen verstehen?</h3>
             <p className="about__description">
-              An open, feeless and scalable distributed ledger, designed to
-              support data and value transfer.
+              Lernen Sie wie Geld heute funktioniert und wie man in einer
+              Industrie planbar und sicher Vermögen aufbaut.
             </p>
           </div>
         </Link>
@@ -27,10 +27,10 @@ export default function UsePart() {
             <div className="about__icon">
               <IotaToken />
             </div>
-            <h3 className="about__header">Get IOTA tokens</h3>
+            <h3 className="about__header">Gespräch vereinbaren</h3>
             <p className="about__description">
-              The IOTA token is used to transact value on the IOTA distributed
-              ledger.
+              Sie haben Fragen? Sprechen Sie mit uns und lassen Sie sich alle
+              Fragen beantworten.
             </p>
           </div>
         </Link>
@@ -39,10 +39,10 @@ export default function UsePart() {
             <div className="about__icon">
               <PickAWallet />
             </div>
-            <h3 className="about__header">Pick a wallet</h3>
+            <h3 className="about__header">Auf Amazon bestellen</h3>
             <p className="about__description">
-              Choose a wallet to store your public and private keys and interact
-              with the IOTA network.
+              Bestellen Sie das neue Buch von Christian Heinz »Der
+              Geld-Algorithmus» und lernen Sie wie Vermögen funktionieren.
             </p>
           </div>
         </Link>

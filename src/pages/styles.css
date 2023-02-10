@@ -542,20 +542,20 @@
   background-color: var(--ifm-color-emphasis-100);
 }
 
-/* .resources__card--logo {
+.resources__card--logo {
   background: center center / 80% no-repeat
       url("/img/homepage/resources_bot.svg"),
     var(--ifm-color-emphasis-0);
   grid-row: span 2;
   justify-content: right;
   cursor: unset;
-} */
+}
 
-/* :root[data-theme="dark"] .resources__card--logo {
+:root[data-theme="dark"] .resources__card--logo {
   background: center center / 80% no-repeat
       url("/img/homepage/resources_bot.svg"),
     var(--ifm-color-emphasis-100);
-} */
+}
 
 .resources__card--logo:hover {
   color: inherit;
