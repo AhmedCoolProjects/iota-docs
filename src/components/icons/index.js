@@ -10,3 +10,8 @@ export { default as IntegrationServices } from "./integration_services.svg";
 export { default as Discord } from "./discord.svg";
 export { default as Tips } from "./tips.svg";
 export { default as Search } from "./search.svg";
+export { default as Youtube } from "./youtube.svg";
+export { default as LinkedIn } from "./linkedin.svg";
+export { default as Twitter } from "./twitter.svg";
+export { default as Instagram } from "./instagram.svg";
+export { default as TikTok } from "./tiktok.svg";
