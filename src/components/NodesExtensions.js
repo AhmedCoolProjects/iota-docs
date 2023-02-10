@@ -9,8 +9,8 @@ import { Bee, Chronicle, Hornet } from "./icons";
 function NodesExtensions() {
   return (
     <HomepageSection
-      header="Nodes and extensions"
-      description="Nodes are the core of an IOTA network. They run the node software, which gives them read and write access to the IOTA network. You can extend their functionality with additional extensions such as INX plugins or the Wasp software for Smart Contracts"
+      header="Expertise & Erfahrung"
+      // description="Nodes are the core of an IOTA network. They run the node software, which gives them read and write access to the IOTA network. You can extend their functionality with additional extensions such as INX plugins or the Wasp software for Smart Contracts"
     >
       <div className="nodes__cards">
         <div className="nodes__card">
@@ -20,24 +20,19 @@ function NodesExtensions() {
           <div className="nodes__section">
             <h3 className="nodes__header">Digitale Vermögenswerte</h3>
             <ul className="nodes__features">
-              <li className="nodes__feature">
-                <Link to="/hornet/welcome">
-                  A node implementation written in Go
-                </Link>
+              <li className="nodes__feature no__link">
+                {/* <Link to="/hornet/welcome"> */}
+                Neue wirtschaftliche Werte befinden sich auf verteilten
+                Systemen. Wie die Wertschöpfung funktioniert und wie Sie am
+                teilhaben haben können.
+                {/* </Link> */}
               </li>
               <li className="nodes__feature">
-                <Link to="/hornet/getting_started">
-                  Participate in the network
-                </Link>
-              </li>
-              <li className="nodes__feature">
-                <Link to="/hornet/how_tos/managing_a_node">
-                  Manage your node
-                </Link>
+                <Link to="docs4/intro">Erfahren Sie mehr.</Link>
               </li>
             </ul>
             <Link
-              to="hornet/how_tos/hornet_apt_repository"
+              to="docs4/intro"
               className="nodes__button button button--outline button--primary"
             >
               Jetzt starten
@@ -51,20 +46,16 @@ function NodesExtensions() {
           <div className="nodes__section">
             <h3 className="nodes__header">Venture Building</h3>
             <ul className="nodes__features">
-              <li className="nodes__feature">
-                <Link to="/bee/welcome">A node implementation in Rust</Link>
+              <li className="nodes__feature no__link">
+                Unser interdisziplinäres Team aus Experten führt Ideen Schritt
+                für Schritt in ein erfolgversprechendes Unternehmen über.
               </li>
               <li className="nodes__feature">
-                <Link to="/bee/getting_started">
-                  Participate in the network
-                </Link>
-              </li>
-              <li className="nodes__feature">
-                <Link to="/bee/how_tos/docker">Become a node operator</Link>
+                <Link to="docs4/intro">Erfahren Sie mehr.</Link>
               </li>
             </ul>
             <Link
-              to="bee/how_tos/setup_a_node"
+              to="docs4/intro"
               className="nodes__button button button--outline button--primary"
             >
               Jetzt starten
@@ -80,24 +71,16 @@ function NodesExtensions() {
               Investment Banking & Unternehmensfinanzierung
             </h3>
             <ul className="nodes__features">
-              <li className="nodes__feature">
-                <Link to="/chronicle/welcome">
-                  Efficient and reliable permanodes
-                </Link>
+              <li className="nodes__feature no__link">
+                Wir skalieren innvoative Unternehmen. Von der Pre-Seed Phase bis
+                zum d-IPO.
               </li>
               <li className="nodes__feature">
-                <Link to="/chronicle/welcome#project-structure">
-                  Solution for storing all transactions
-                </Link>
-              </li>
-              <li className="nodes__feature">
-                <Link to="/chronicle/config_reference">
-                  Managing and accessing the permanode
-                </Link>
+                <Link to="docs4/intro">Erfahren Sie mehr.</Link>
               </li>
             </ul>
             <Link
-              to="chronicle/getting_started"
+              to="docs4/intro"
               className="nodes__button button button--outline button--primary"
             >
               Jetzt starten

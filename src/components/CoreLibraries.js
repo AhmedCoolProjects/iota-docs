@@ -11,7 +11,7 @@ function CoreLibraries() {
   return (
     <HomepageSection
       header="Vermögensaufbau-as-a-Service"
-      description="With the IOTA core libraries you can easily integrate IOTA into your own applications."
+      // description="With the IOTA core libraries you can easily integrate IOTA into your own applications."
     >
       <div className="libraries__cards">
         <div className="libraries__card">
@@ -33,11 +33,13 @@ function CoreLibraries() {
             <h3 className="libraries__header">FÜR PRIVATE</h3>
             <ul className="libraries__features">
               <li className="libraries__feature">
-                <Link to="/iota.rs/examples/get_info">
-                  Interact with the IOTA network
-                </Link>
+                {/* <Link to="/iota.rs/examples/get_info"> */}
+                Wir führen Sie Schritt-für-Schritt durch den Auswahl- und
+                Investitions-Prozess. Sie behalten zu jeder Zeit 100% die
+                Kontrolle.
+                {/* </Link> */}
               </li>
-              <li className="libraries__feature">
+              {/* <li className="libraries__feature">
                 <Link to="/iota.rs/examples/data_message">
                   Send a data message
                 </Link>
@@ -46,7 +48,7 @@ function CoreLibraries() {
                 <Link to="/iota.rs/explanations/messages_payloads_and_transactions">
                   Learn about transactions
                 </Link>
-              </li>
+              </li> */}
             </ul>
             <Link
               to="/iota.rs/welcome"
@@ -74,11 +76,13 @@ function CoreLibraries() {
             <h3 className="libraries__header">FÜR UNTERNEHMEN</h3>
             <ul className="libraries__features">
               <li className="libraries__feature">
-                <Link to="/wallet.rs/explanations/nutshell">
-                  The library in a nutshell
-                </Link>
+                {/* <Link to="/wallet.rs/explanations/nutshell"> */}
+                Nach einer initialen Discovery implementieren wir sämtliche
+                Prozesse und Strukturen gemäß ESMA-Vorgaben für Sie und
+                begleiten alle weiteren Schritte.
+                {/* </Link> */}
               </li>
-              <li className="libraries__feature">
+              {/* <li className="libraries__feature">
                 <Link to="/wallet.rs/examples/rust#backup-and-restore-example">
                   Store account data
                 </Link>
@@ -87,10 +91,10 @@ function CoreLibraries() {
                 <Link to="/wallet.rs/examples/rust#transfer-example">
                   Transfer tokens
                 </Link>
-              </li>
+              </li> */}
             </ul>
             <Link
-              to="/wallet.rs/welcome"
+              to="/docs3/intro"
               className="libraries__button button button--outline button--primary"
             >
               Mehr erfahren

@@ -15,7 +15,7 @@ export default function UsePart() {
             <div className="about__icon">
               <IotaCore />
             </div>
-            <h3 className="about__header">Vermögen verstehen?</h3>
+            <h3 className="about__header">Vermögen verstehen</h3>
             <p className="about__description">
               Lernen Sie wie Geld heute funktioniert und wie man in einer
               Industrie planbar und sicher Vermögen aufbaut.

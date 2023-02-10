@@ -5,6 +5,7 @@
   row-gap: 1rem;
   padding: 0 8rem;
   display: flex;
+  margin-bottom: 4rem;
 }
 
 .slide {
@@ -31,11 +32,14 @@
   .slide {
     background: none !important;
   }
+  .slide__container {
+    padding: 0 2rem;
+  }
 }
 
 .slide__section {
-  max-width: 25rem;
-  margin: 6rem 0;
+  max-width: 32rem;
+  margin: 6rem 0 0 0;
 }
 
 .slide__header {

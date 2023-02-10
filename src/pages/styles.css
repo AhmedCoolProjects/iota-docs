@@ -411,11 +411,15 @@
   margin: 0;
   padding-left: 1rem;
   font-size: 0.8rem;
-  white-space: nowrap;
 }
 
 .libraries__feature {
   margin: 0.5rem 0;
+}
+
+.no__link {
+  list-style-type: none;
+  white-space: normal !important;
 }
 
 .nodes__feature > a,
@@ -502,6 +506,7 @@
 
 .nodes__feature {
   margin: 0.5rem 0;
+  list-style-type: none;
 }
 
 .nodes__button {

@@ -1,13 +1,13 @@
 {
-  "title": "The complete reference for IOTA",
-  "description": "Build apps capable of taking millions of users on journeys they’ve never been on before. Simple. Scalable. Secure.",
+  "title": "Ein Ereignis. Eine Industrie. Alle vier Jahre. Ihre nächste Chance.",
+  "description": "Die globalen Finanzmärkte sind komplex. Die Renditen gering. Die finanzielle Zukunft unsicher. Wie Sie sicher, planbar und nachhaltig Vermögen aufbauen. Ich begleite Sie auf jedem Schritt des Weges. Sie behalten zu 100% die Kontrolle. 4 Jahre Geld-zurück-Garantie.",
   "outlinedButton": {
-    "buttonText": "Learn About IOTA",
-    "url": "/learn/about-iota/an-introduction-to-iota"
+    "buttonText": "Vermögen verstehen",
+    "url": "/docs/intro"
   },
   "solidButton": {
-    "buttonText": "Start building",
-    "url": "/develop/welcome"
+    "buttonText": "Jetzt starten",
+    "url": "/docs2/intro"
   },
-  "imagePath": "/img/homepage/header.svg"
+  "imagePath": "img/homepage/header.svg"
 }

@@ -98,20 +98,18 @@ const config = {
         indexName: "prod_index",
       },
       i18n: {
-        defaultLocale: "nl",
-        locales: ["nl", "fr"],
+        defaultLocale: "de",
+        locales: ["de", "fr"],
         path: "i18n",
         localeConfigs: {
           nl: {
             label: "Flemish",
             direction: "ltr",
-            htmlLang: "nl-NL",
-            path: "nl",
+            path: "",
           },
           fr: {
             label: "Français",
             direction: "rtl",
-            htmlLang: "fr-FR",
             path: "fr",
           },
         },
@@ -148,10 +146,10 @@ const config = {
             type: "localeDropdown",
             position: "right",
           },
-          {
-            type: "search",
-            position: "right",
-          },
+          // {
+          //   type: "search",
+          //   position: "right",
+          // },
         ],
       },
       footer: {
