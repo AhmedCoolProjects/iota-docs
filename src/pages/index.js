@@ -7,6 +7,7 @@ import CoreLibraries from "../components/CoreLibraries";
 import NodesExtensions from "../components/NodesExtensions";
 import DevResources from "../components/DevResources";
 import Header from "../components/Header";
+import FurtherLinks from "../components/FurtherLinks";
 
 export default function Home() {
   const { siteConfig } = useDocusaurusContext();
@@ -25,6 +26,7 @@ export default function Home() {
         <CoreLibraries />
         <NodesExtensions />
         <DevResources />
+        <FurtherLinks />
       </main>
     </Layout>
   );
