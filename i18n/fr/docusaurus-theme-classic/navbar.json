@@ -1,0 +1,18 @@
+{
+  "item.label.Verstehen": {
+    "message": "Verstehen",
+    "description": "Navbar item with label Verstehen"
+  },
+  "item.label.Umsetzen": {
+    "message": "Umsetzen",
+    "description": "Navbar item with label Umsetzen"
+  },
+  "item.label.Team": {
+    "message": "Team",
+    "description": "Navbar item with label Team"
+  },
+  "item.label.Karriere": {
+    "message": "Karriere",
+    "description": "Navbar item with label Karriere"
+  }
+}
