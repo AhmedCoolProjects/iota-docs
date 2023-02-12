@@ -5,11 +5,12 @@ import React from "react";
 import ThemedImage from "@theme/ThemedImage";
 import HomepageSection from "./HomepageSection";
 import { Bee, Chronicle, Hornet } from "./icons";
+import Translate from "@docusaurus/Translate";
 
 function NodesExtensions() {
   return (
     <HomepageSection
-      header="Expertise & Erfahrung"
+      header={() => <Translate>Expertise & Erfahrung</Translate>}
       // description="Nodes are the core of an IOTA network. They run the node software, which gives them read and write access to the IOTA network. You can extend their functionality with additional extensions such as INX plugins or the Wasp software for Smart Contracts"
     >
       <div className="nodes__cards">
@@ -18,24 +19,30 @@ function NodesExtensions() {
             <Hornet />
           </div>
           <div className="nodes__section">
-            <h3 className="nodes__header">Digitale Vermögenswerte</h3>
+            <h3 className="nodes__header">
+              <Translate>Digitale Vermögenswerte</Translate>
+            </h3>
             <ul className="nodes__features">
               <li className="nodes__feature no__link">
                 {/* <Link to="/hornet/welcome"> */}
-                Neue wirtschaftliche Werte befinden sich auf verteilten
-                Systemen. Wie die Wertschöpfung funktioniert und wie Sie am
-                teilhaben haben können.
+                <Translate>
+                  Neue wirtschaftliche Werte befinden sich auf verteilten
+                  Systemen. Wie die Wertschöpfung funktioniert und wie Sie am
+                  teilhaben haben können.
+                </Translate>
                 {/* </Link> */}
               </li>
               <li className="nodes__feature">
-                <Link to="docs4/intro">Erfahren Sie mehr.</Link>
+                <Link to="docs4/intro">
+                  <Translate>Erfahren Sie mehr.</Translate>
+                </Link>
               </li>
             </ul>
             <Link
               to="docs4/intro"
               className="nodes__button button button--outline button--primary"
             >
-              Jetzt starten
+              <Translate>Jetzt starten</Translate>
             </Link>
           </div>
         </div>
@@ -44,21 +51,27 @@ function NodesExtensions() {
             <Bee />
           </div>
           <div className="nodes__section">
-            <h3 className="nodes__header">Venture Building</h3>
+            <h3 className="nodes__header">
+              <Translate>Venture Building</Translate>
+            </h3>
             <ul className="nodes__features">
               <li className="nodes__feature no__link">
-                Unser interdisziplinäres Team aus Experten führt Ideen Schritt
-                für Schritt in ein erfolgversprechendes Unternehmen über.
+                <Translate>
+                  Unser interdisziplinäres Team aus Experten führt Ideen Schritt
+                  für Schritt in ein erfolgversprechendes Unternehmen über.
+                </Translate>
               </li>
               <li className="nodes__feature">
-                <Link to="docs4/intro">Erfahren Sie mehr.</Link>
+                <Link to="docs4/intro">
+                  <Translate>Erfahren Sie mehr.</Translate>
+                </Link>
               </li>
             </ul>
             <Link
               to="docs4/intro"
               className="nodes__button button button--outline button--primary"
             >
-              Jetzt starten
+              <Translate>Jetzt starten</Translate>
             </Link>
           </div>
         </div>
@@ -68,22 +81,28 @@ function NodesExtensions() {
           </div>
           <div className="nodes__section">
             <h3 className="nodes__header">
-              Investment Banking & Unternehmensfinanzierung
+              <Translate>
+                Investment Banking & Unternehmensfinanzierung
+              </Translate>
             </h3>
             <ul className="nodes__features">
               <li className="nodes__feature no__link">
-                Wir skalieren innvoative Unternehmen. Von der Pre-Seed Phase bis
-                zum d-IPO.
+                <Translate>
+                  Wir skalieren innvoative Unternehmen. Von der Pre-Seed Phase
+                  bis zum d-IPO.
+                </Translate>
               </li>
               <li className="nodes__feature">
-                <Link to="docs4/intro">Erfahren Sie mehr.</Link>
+                <Link to="docs4/intro">
+                  <Translate>Erfahren Sie mehr.</Translate>
+                </Link>
               </li>
             </ul>
             <Link
               to="docs4/intro"
               className="nodes__button button button--outline button--primary"
             >
-              Jetzt starten
+              <Translate>Jetzt starten</Translate>
             </Link>
           </div>
         </div>

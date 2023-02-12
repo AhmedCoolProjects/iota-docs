@@ -1,11 +1,12 @@
 import Link from "@docusaurus/Link";
+import Translate from "@docusaurus/Translate";
 import React from "react";
 import HomepageSection from "./HomepageSection";
 import { Discord, Search, Tips } from "./icons";
 
 function FurtherLinks() {
   return (
-    <HomepageSection header="Further links">
+    <HomepageSection header={() => <Translate>Further links</Translate>}>
       <div className="further__cards">
         <Link to="https://discord.iota.org/" className="further__card">
           <div className="further__section">

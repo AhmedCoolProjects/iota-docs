@@ -1,5 +1,6 @@
 import React from "react";
 import clsx from "clsx";
+// import ReactDOMServer from "react-dom/server";
 
 export default function HomepageSection(props) {
   const toKebabCase = (header) =>
@@ -14,9 +15,15 @@ export default function HomepageSection(props) {
   return (
     <div className={clsx("homepage__section", props.className)}>
       <div className="homepage__container">
-        {props.header && (
-          <h2 className="homepage__header" id={toKebabCase(props.header)}>
-            {props.header}
+        {props.header() && (
+          <h2
+            className="homepage__header"
+            // id={ReactDOMServer.renderToStaticMarkup(props.header()).replace(
+            //   /<[^>]+>/g,
+            //   ""
+            // )}
+          >
+            {props.header()}
           </h2>
         )}
         {props.description && (

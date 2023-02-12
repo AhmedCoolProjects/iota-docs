@@ -6,11 +6,12 @@ import HomepageSection from "./HomepageSection";
 import { IotaCore, Wallet } from "./icons";
 import Languages from "./Languages";
 import ThemedImage from "@theme/ThemedImage";
+import Translate from "@docusaurus/Translate";
 
 function CoreLibraries() {
   return (
     <HomepageSection
-      header="Vermögensaufbau-as-a-Service"
+      header={() => <Translate>Vermögensaufbau-as-a-Service</Translate>}
       // description="With the IOTA core libraries you can easily integrate IOTA into your own applications."
     >
       <div className="libraries__cards">
@@ -30,13 +31,17 @@ function CoreLibraries() {
                 }}
               />
             </div>
-            <h3 className="libraries__header">FÜR PRIVATE</h3>
+            <h3 className="libraries__header">
+              <Translate>FÜR PRIVATE</Translate>
+            </h3>
             <ul className="libraries__features">
               <li className="libraries__feature">
                 {/* <Link to="/iota.rs/examples/get_info"> */}
-                Wir führen Sie Schritt-für-Schritt durch den Auswahl- und
-                Investitions-Prozess. Sie behalten zu jeder Zeit 100% die
-                Kontrolle.
+                <Translate>
+                  Wir führen Sie Schritt-für-Schritt durch den Auswahl- und
+                  Investitions-Prozess. Sie behalten zu jeder Zeit 100% die
+                  Kontrolle.
+                </Translate>
                 {/* </Link> */}
               </li>
               {/* <li className="libraries__feature">
@@ -54,7 +59,7 @@ function CoreLibraries() {
               to="/iota.rs/welcome"
               className="libraries__button button button--outline button--primary"
             >
-              Jetzt Gespräch vereinbaren
+              <Translate>Jetzt Gespräch vereinbaren</Translate>
             </Link>
           </div>
         </div>
@@ -73,13 +78,17 @@ function CoreLibraries() {
                 }}
               />
             </div>
-            <h3 className="libraries__header">FÜR UNTERNEHMEN</h3>
+            <h3 className="libraries__header">
+              <Translate>FÜR UNTERNEHMEN</Translate>
+            </h3>
             <ul className="libraries__features">
               <li className="libraries__feature">
                 {/* <Link to="/wallet.rs/explanations/nutshell"> */}
-                Nach einer initialen Discovery implementieren wir sämtliche
-                Prozesse und Strukturen gemäß ESMA-Vorgaben für Sie und
-                begleiten alle weiteren Schritte.
+                <Translate>
+                  Nach einer initialen Discovery implementieren wir sämtliche
+                  Prozesse und Strukturen gemäß ESMA-Vorgaben für Sie und
+                  begleiten alle weiteren Schritte.
+                </Translate>
                 {/* </Link> */}
               </li>
               {/* <li className="libraries__feature">
@@ -97,7 +106,7 @@ function CoreLibraries() {
               to="/docs3/intro"
               className="libraries__button button button--outline button--primary"
             >
-              Mehr erfahren
+              <Translate>Mehr erfahren</Translate>
             </Link>
           </div>
         </div>

@@ -24,12 +24,17 @@ const config = {
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
 
-  // Even if you don't use internalization, you can use this field to set useful
-  // metadata like html lang. For example, if your site is Chinese, you may want
-  // to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: "en",
-    locales: ["en"],
+    defaultLocale: "de",
+    locales: ["de", "fr"],
+    localeConfigs: {
+      de: {
+        label: "Flemish",
+      },
+      fr: {
+        label: "Français",
+      },
+    },
   },
 
   presets: [
@@ -97,28 +102,12 @@ const config = {
         appId: "xxxxx",
         indexName: "prod_index",
       },
-      i18n: {
-        defaultLocale: "de",
-        locales: ["de", "fr"],
-        path: "i18n",
-        localeConfigs: {
-          nl: {
-            label: "Flemish",
-            direction: "ltr",
-            path: "",
-          },
-          fr: {
-            label: "Français",
-            direction: "rtl",
-            path: "fr",
-          },
-        },
-      },
+
       navbar: {
         title: "",
         logo: {
           alt: "Logo",
-          src: "img/logo.svg",
+          src: "img/logo.png",
         },
         items: [
           {
