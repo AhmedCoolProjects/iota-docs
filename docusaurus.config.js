@@ -107,7 +107,8 @@ const config = {
         title: "",
         logo: {
           alt: "Logo",
-          src: "img/logo.png",
+          src: "img/logo_light.png",
+          srcDark: "img/logo_dark.png",
         },
         items: [
           {
